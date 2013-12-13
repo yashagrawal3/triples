@@ -1,0 +1,9 @@
+[Activity]
+name = Triples
+activity_version = 26.3
+host_version = 1
+bundle_id = mulawa.Triples
+icon = activity
+show_launcher = yes
+exec = sugar-activity activity.PeterActivity
+summary = "find three identical cards"
