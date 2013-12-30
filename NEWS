@@ -1,0 +1,19 @@
+26.3
+
+* New Sugar-compliant icon
+
+
+26.2
+
+* Play -> Restart (OZ #3690)
+
+26.1
+
+* pep8 cleanup
+* turn off sharing
+* monochrome icons
+
+26
+
+* Aggressive Sugar stylizing
+* Handle screen rotation

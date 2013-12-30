@@ -1,0 +1,108 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY stroke_color "#000">
+	<!ENTITY fill_color "#eee">
+]><svg height="55px" viewBox="0 0 45 45" width="55px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" stroke="&stroke_color;" fill="&fill_color;">
+  <rect
+     width="0.41800001"
+     height="5.7090001"
+     x="20.312"
+     y="-7.2910018"
+     transform="scale(1,-1)"
+     id="rect122"
+     style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-width:1.25;stroke-miterlimit:80;stroke-opacity:1;stroke-dasharray:none;" />
+  <path
+     d="m -41.194,-15.76 4.504,-2.5 14.534999,0 0,4.545 -19.038999,0 z"
+     transform="matrix(0,-1,-1,0,0,0)"
+     id="rect132"
+     style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+  <path
+     d="m -36.69,-22.790001 14.534999,0 0,4.545 -14.534999,0 3.496,-2.2725 z"
+     transform="matrix(0,-1,-1,0,0,0)"
+     id="rect136"
+     style="font-size:16px;fill:&fill_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+  <path
+     d="m -41.194,-27.41 19.038999,0 0,4.545 -14.534999,0 -4.504,-2.3998 z"
+     transform="matrix(0,-1,-1,0,0,0)"
+     id="rect138"
+     style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+  <g
+     id="g4112"
+     style="fill:&stroke_color;;fill-opacity:1">
+    <rect
+       width="19.039"
+       height="4.5450001"
+       x="-41.194"
+       y="-9.0799999"
+       transform="matrix(0,-1,-1,0,0,0)"
+       id="rect128"
+       style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+    <path
+       d="m 4.407,22.223 4.785,0 L 20.358,5.688 4.407,22.223 z"
+       id="path146"
+       style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+  </g>
+  <g
+     id="g4108"
+     style="fill:&stroke_color;;fill-opacity:1">
+    <rect
+       width="19.039"
+       height="4.5450001"
+       x="-41.194"
+       y="-36.59"
+       transform="matrix(0,-1,-1,0,0,0)"
+       id="rect142"
+       style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+    <path
+       d="m 36.682,22.223 -4.785,0 L 20.731,5.688 36.682,22.223 z"
+       id="path148"
+       style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+  </g>
+  <g
+     id="g4100"
+     style="fill:&fill_color;;fill-opacity:1">
+    <rect
+       width="19.039"
+       height="4.5450001"
+       x="-41.194"
+       y="-13.64"
+       transform="matrix(0,-1,-1,0,0,0)"
+       id="rect130"
+       style="font-size:16px;fill:&fill_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+    <path
+       d="M 9.024,22.472 13.642,22.347 20.61,5.439 9.024,22.472 z"
+       id="path150"
+       style="font-size:16px;fill:&fill_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+  </g>
+  <g
+     id="g4104"
+     style="fill:&fill_color;;fill-opacity:1">
+    <rect
+       width="19.039"
+       height="4.5450001"
+       x="-41.194"
+       y="-31.969999"
+       transform="matrix(0,-1,-1,0,0,0)"
+       id="rect140"
+       style="font-size:16px;fill:&fill_color;;fill-opacity:1;stroke:none;font-family:Times New Roman" />
+    <path
+       d="M 31.982,22.472 27.364,22.347 20.396,5.439 31.982,22.472 z"
+       id="path152"
+       style="font-size:16px;fill:&fill_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+  </g>
+  <g
+     id="g4116"
+     style="fill:&stroke_color;;fill-opacity:1">
+    <path
+       d="m 13.642,22.223 4.617,0 2.267,-16.41 -6.884,16.41 z"
+       id="path154"
+       style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+    <path
+       d="m 27.388,22.223 -4.617,0 -2.267,-16.41 6.884,16.41 z"
+       id="path156"
+       style="font-size:16px;fill:&stroke_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+  </g>
+  <path
+     d="m 18.259,22.347 4.45,0 -2.183,-16.285 -2.267,16.285 z"
+     id="path158"
+     style="font-size:16px;fill:&fill_color;;fill-opacity:1;stroke:none;stroke-width:0.75;marker-start:none;marker-end:none;font-family:Times New Roman" />
+</svg>
