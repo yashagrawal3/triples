@@ -7,3 +7,4 @@ icon = activity
 show_launcher = yes
 exec = sugar-activity activity.PeterActivity
 summary = "find three identical cards"
+category = game
