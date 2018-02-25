@@ -13,16 +13,20 @@
 from gettext import gettext as _
 import logging
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('Gdk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Gdk
 import pygame
 
-from sugar.activity import activity
-from sugar.graphics.toolbarbox import ToolbarBox
-from sugar.activity.widgets import ActivityToolbarButton
-from sugar.graphics.toolbarbox import ToolbarButton
-from sugar.graphics.toolbutton import ToolButton
-from sugar.graphics.style import GRID_CELL_SIZE
-from sugar import profile
+from sugar3.activity import activity
+from sugar3.graphics.toolbarbox import ToolbarBox
+from sugar3.activity.widgets import ActivityToolbarButton
+from sugar3.graphics.toolbarbox import ToolbarButton
+from sugar3.graphics.toolbutton import ToolButton
+from sugar3.graphics.style import GRID_CELL_SIZE
+from sugar3 import profile
 
 import sugargame.canvas
 import load_save
@@ -46,46 +50,46 @@ class PeterActivity(activity.Activity):
         self.max_participants = 1
 
         # Build the activity toolbar.
-        toolbox = ToolbarBox()
+        toolbar_box = ToolbarBox()
 
         activity_button = ActivityToolbarButton(self)
-        toolbox.toolbar.insert(activity_button, 0)
+        toolbar_box.toolbar.insert(activity_button, 0)
         activity_button.show()
 
         cyan = ToolButton('cyan')
-        toolbox.toolbar.insert(cyan, -1)
+        toolbar_box.toolbar.insert(cyan, -1)
         cyan.set_tooltip(_('Restart'))
         cyan.connect('clicked', self._button_cb, 'new')
         cyan.show()
 
-        separator = gtk.SeparatorToolItem()
+        separator = Gtk.SeparatorToolItem()
         separator.props.draw = True
-        toolbox.toolbar.insert(separator, -1)
+        toolbar_box.toolbar.insert(separator, -1)
         separator.show()
 
-        label = gtk.Label()
+        label = Gtk.Label()
         label.set_use_markup(True)
         label.show()
-        labelitem = gtk.ToolItem()
+        labelitem = Gtk.ToolItem()
         labelitem.add(label)
-        toolbox.toolbar.insert(labelitem, -1)
+        toolbar_box.toolbar.insert(labelitem, -1)
         labelitem.show()
 
-        separator = gtk.SeparatorToolItem()
+        separator = Gtk.SeparatorToolItem()
         separator.props.draw = False
         separator.set_expand(True)
-        toolbox.toolbar.insert(separator, -1)
+        toolbar_box.toolbar.insert(separator, -1)
         separator.show()
 
         stop = ToolButton('activity-stop')
-        toolbox.toolbar.insert(stop, -1)
+        toolbar_box.toolbar.insert(stop, -1)
         stop.props.tooltip = _('Stop')
         stop.props.accelerator = '<Ctrl>Q'
         stop.connect('clicked', self.__stop_button_clicked_cb, activity)
         stop.show()
 
-        toolbox.show()
-        self.set_toolbox(toolbox)
+        toolbar_box.show()
+        self.set_toolbar_box(toolbar_box)
 
         # Create the game instance.
         self.game = Triples.Triples(colors, sugar=True)
@@ -98,7 +102,7 @@ class PeterActivity(activity.Activity):
         self.game.canvas = self._pygamecanvas
         self.game.set_label(label)
 
-        gtk.gdk.screen_get_default().connect('size-changed',
+        Gdk.Screen.get_default().connect('size-changed',
                                              self.__configure_cb)
 
         # Start the game running.
@@ -112,8 +116,8 @@ class PeterActivity(activity.Activity):
     def __configure_cb(self, event):
         ''' Screen size has changed '''
         logging.debug(self._pygamecanvas.get_allocation())
-        pygame.display.set_mode((gtk.gdk.screen_width(),
-                                 gtk.gdk.screen_height() - GRID_CELL_SIZE),
+        pygame.display.set_mode((Gdk.screen_width(),
+                                 Gdk.screen_height() - GRID_CELL_SIZE),
                                 pygame.RESIZABLE)
 
         self.game.run(restore=True)

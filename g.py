@@ -26,6 +26,7 @@ TICK=(257,13)
 
 def init(): # called by run()
     random.seed()
+    pygame.init()
     global redraw
     global screen,w,h,font1,font2,clock
     global factor,offset,imgf,message,version_display

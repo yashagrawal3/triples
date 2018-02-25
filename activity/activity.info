@@ -7,3 +7,5 @@ icon = activity
 show_launcher = yes
 exec = sugar-activity activity.PeterActivity
 summary = "find three identical cards"
+license = GPLv3+
+repository = https://github.com/sugarlabs/triples.git
